@@ -39,6 +39,7 @@ class Ncurses < Formula
                           "--mandir=#{man}",
                           "--with-manpage-format=normal",
                           "--with-shared"
+                          "--with-gpm=no"
     system "make", "install"
     make_libncurses_symlinks
 
